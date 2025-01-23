@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+
+.bouncing-text {
+    font-size: 10rem;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    animation: rainbow 5s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes rainbow {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: blue; }
+    71% { color: indigo; }
+    85% { color: violet; }
+    100% { color: red; }
+}
